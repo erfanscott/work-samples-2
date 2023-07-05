@@ -28,7 +28,7 @@ export default function SignIn() {
     try {
       const auth = getAuth();
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/");
+      navigate("/profile");
     } catch (error) {
       toast.error("Check the credentials and try again");
     }

@@ -28,7 +28,7 @@ export default function GoogleAuthBtn() {
           timeStamp: new Date(),
         });
       }
-      navigate("/");
+      navigate("/profile");
     } catch (error) {
       toast.error("Something went wrong with google authentication");
     }
